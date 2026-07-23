@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "scanId": "public-safe-bootstrap",
+  "generatedAt": "2026-07-16T15:30:00+08:00",
+  "sourceWindow": "安全模式：GitHub Pages 不直接發布本機與 Outlook 盤點內容。登入雲端同步後才會載入個人任務。",
+  "tasks": [
+    {
+      "id": "configure-secure-cloud-sync",
+      "title": "登入以載入個人任務",
+      "workstream": "系統設定",
+      "summary": "Supabase、RLS 與跨裝置同步已啟用；未登入時只顯示這項安全提示。",
+      "nextAction": "點選右上角「登入同步」，輸入已登記的電子郵件並開啟一次性登入連結。",
+      "status": "pending",
+      "priority": "high",
+      "confidence": 1.0,
+      "dueAt": null,
+      "introducedAt": "2026-07-16T15:30:00+08:00",
+      "updatedAt": "2026-07-16T15:30:00+08:00",
+      "completedAt": null,
+      "archivedAt": null,
+      "humanConfirmed": true,
+      "evidence": [
+        {
+          "id": "security-boundary",
+          "sourceType": "codex",
+          "label": "GitHub Pages 安全部署規則",
+          "observedAt": "2026-07-16T15:30:00+08:00",
+          "note": "匿名使用者看不到資料表內容；登入後才會從 Supabase 載入個人任務。"
+        }
+      ]
+    }
+  ]
+}
